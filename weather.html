@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather and Radar</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+<header>
+    <h2 class="header-button">
+        <a href="index.html">Hartford Herald</a>
+    </h2>
+</header>
+    
+<section>
+    <div id="weather-radar-container">
+        <!-- Weather Section -->
+        <section id="weather-section">
+            <div
+            data-meteomatics-weather-widget="horizontal"
+            data-meteomatics-weather-widget-color="primary"
+            data-meteomatics-weather-widget-title="Hartford, United States"
+            data-meteomatics-weather-widget-latitude="41.76379"
+            data-meteomatics-weather-widget-longitude="-72.69928"
+            data-meteomatics-weather-widget-measurement-unit-temperature="celsius"
+          >
+            <a href="https://www.meteomatics.com">Meteomatics Weather Widget</a>
+          </div>
+          
+          <link rel="stylesheet" href="https://widget.meteomatics.com/v2/meteomatics-weather-widget.css" />
+          <script async src="https://widget.meteomatics.com/v2/meteomatics-weather-widget.js"></script>
+
+        </section>
+    
+        <!-- Radar Section -->
+        <section id="radar-section">
+            <div class="radar-container">
+                <h2>Live Hurricane Radar</h2>
+                <iframe 
+                    src="https://embed.windy.com/embed2.html?lat=41.76&lon=-72.68&zoom=5&level=surface&overlay=radar"
+                    frameborder="0"></iframe>
+            </div>
+        </section>
+    </div>
+    
+</section>
+  
+  
+
+
+    <script src="weather.js"></script>
+</body>
+</html>

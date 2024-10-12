@@ -1,0 +1,97 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for the header link */
+.header-button a {
+    text-decoration: none;    /* Remove underline */
+    color: #003366;           /* Set text color */
+    background-color: #e0e0e0; /* Optional: button-like background */
+    padding: 5px 20px;       /* Optional: padding for a button effect */
+    border-radius: 8px;       /* Rounded corners */
+    display: inline-block;    /* Make the link behave like a button */
+    font-size: 1.5em;         /* Increase text size */
+    font-weight: bold;        /* Make the text bold */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    margin-bottom: 20px;
+}
+
+/* Hover effect */
+.header-button a:hover {
+    background-color: #005599; /* Change background on hover */
+    color: white;              /* Change text color on hover */
+}
+
+/* Make sure visited links don't change color */
+.header-button a:visited {
+    color: #003366;            /* Same color as normal state */
+    background-color: #e0e0e0; /* Same background as normal state */
+}
+
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+#featured-article {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#featured-article img {
+    width: 200px;
+    height: 200px;
+}
+
+#latest-article .article {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+h2, h3 {
+    color: #2c2c2c;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    color: rgb(128, 128, 128);
+    font-weight: 100;
+    font-family: 'Lato', sans-serif;
+}
+
+img {
+    width: 450px;
+    height: 300px;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

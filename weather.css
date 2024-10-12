@@ -1,0 +1,87 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-button a {
+    text-decoration: none;
+    color: #003366;         
+    background-color: #e0e0e0;
+    padding: 10px 20px;       
+    border-radius: 5px;     
+    display: inline-block;
+    font-size: 1.5em;        
+    font-weight: bold;        
+    transition: background-color 0.3s ease; 
+}
+
+.header-button a:hover {
+    background-color: #005599; 
+    color: white;             
+}
+
+.header-button a:visited {
+    color: #003366;            /* Same color as normal state */
+    background-color: #e0e0e0; /* Same background as normal state */
+}
+
+#weather-radar-container {
+    display: flex;                /* Enables side-by-side layout */
+    justify-content: space-between; /* Adds space between the sections */
+    align-items: flex-start;      /* Aligns both sections to the top */
+    padding: 20px;
+    background-color: #f5f5f5;
+    gap: 20px;                    /* Adds consistent space between weather and radar */
+}
+
+/* Weather Section Styling */
+#weather-section {
+    flex: 1;                      /* Allows the section to expand and take available space */
+    min-width: 300px;             /* Ensures the weather section doesn't get too small */
+    max-width: 50%;               /* Ensures it doesn't take more than 50% of the container */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;       /* Ensures padding is included in the box's width */
+}
+
+/* Radar Section Styling */
+#radar-section {
+    flex: 1;                      /* Allows the section to expand and take available space */
+    min-width: 200px;             /* Ensures the radar section doesn't get too small */
+    max-width: 50%;               /* Ensures it doesn't take more than 50% of the container */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-sizing: border-box;       /* Ensures padding is included in the box's width */
+}
+
+/* Radar Content Alignment */
+.radar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#radar-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+iframe {
+    width: 100%;                  /* Ensures iframe takes full width of the section */
+    height: 350px;
+    border: 0;
+}
